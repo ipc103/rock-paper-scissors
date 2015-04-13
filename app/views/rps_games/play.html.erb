@@ -1,0 +1,20 @@
+<div id="dialog">
+  <h1 class="brand-heading">YOU CHOSE <%= @game.player_move %></h1>
+  <h2>COMPUTER CHOSE <%= @game.computer_play %> </h2>
+  <% if @game.won? %>
+    <h3>YOU WIN!</h3>
+    <% if @game.rock_win? %>
+      <img src="http://bbsimg.ngfiles.com/1/5756000/ngbbs42d34487e3956.jpg">
+    <% elsif @game.scissor_win? %>
+      <img src="http://www.wired.com/wp-content/uploads/blogs/design/wp-content/uploads/2013/07/Scissor-wired-1.jpg">
+    <% elsif @game.paper_win? %>
+      <img src='http://dianepernet.typepad.com/.a/6a00d8341c76e453ef0120a6409dbe970c-500wi'>
+    <% end %>
+  <%elsif @game.lost? %>
+    <h3> YOU LOSE!</h3>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/VDW0ZnZxjn4?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <% elsif @game.tied? %>
+    <h3> YOU TIED </h3>
+    <img  style="width:480px" src="http://images.askmen.com/fashion/accessories/1242240244_the-congruent-necktie_1.jpg">
+  <% end %>
+</div>
