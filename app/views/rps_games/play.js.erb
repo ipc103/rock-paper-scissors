@@ -1,1 +1,4 @@
 $("#modal-window").html("<%= escape_javascript(render 'results') %>");
+$("#modal-window").on("click", function(){
+  $(this).children().hide()
+})
