@@ -8,15 +8,15 @@
   <%= analytics_init if Rails.env.production? %>
 </head>
 <body class="<%= controller_name %> <%= action_name %>">
-<!--   <header class="intro">
-    <div class="intro-body"> -->
+  <header class="intro">
+    <div class="intro-body">
       <div class="container">
         <div class="row">
             <%= yield %>
         </div>
       </div>
-    <!-- </div>
-  </header> -->
+    </div>
+  </header>
 </body>
 </html>
 </html>
