@@ -1,17 +1,27 @@
  <div id="modal-window">
  </div>
-   <div class="choice" id = "rock">
-    <a  href = '/rock' data-remote="true">
-      <div class="choicebutton"></div>
-    </a>
+ 
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+     <div class= "choicebutton">
+      <a  href = '/rock' data-remote="true">
+        <%= image_tag 'rock.jpg' %>
+      </a>
+    </div>
   </div>
-  <div class = "choice" id = "paper">
-    <a href = '/paper' data-remote="true">
-      <div class="choicebutton"></div>
-    </a>
+
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class= "choicebutton">
+      <a href = '/paper' data-remote="true">
+        <%= image_tag 'paper.jpg', id: "choicebutton" %>
+      </a>
+    </div>
   </div>
-  <div id = "scissors">
-    <a href = '/scissors' data-remote="true">
-      <div class="choicebutton"></div>
-    </a>
+
+
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class= "choicebutton">
+      <a href = '/scissors' data-remote="true">
+        <%= image_tag 'scissors.jpg' %>
+      </a>
+    </div>
   </div>
